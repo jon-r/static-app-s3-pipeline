@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=398402716888:domainName=jon-richards.com:region=us-east-1": {
+    "Id": "/hostedzone/Z10119413FH4CHCZ19HL4",
+    "Name": "jon-richards.com."
+  },
+  "hosted-zone:account=398402716888:domainName=jon-richards.com:region=eu-west-2": {
+    "Id": "/hostedzone/Z10119413FH4CHCZ19HL4",
+    "Name": "jon-richards.com."
+  }
+}

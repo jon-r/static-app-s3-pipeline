@@ -4,6 +4,7 @@
   "bin": {
     "static-app-s3-pipeline": "bin/static-app-s3-pipeline.js"
   },
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",

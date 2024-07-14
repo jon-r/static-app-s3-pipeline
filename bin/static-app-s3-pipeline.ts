@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import * as cdk from "aws-cdk-lib";
 import "source-map-support/register";
 
@@ -14,6 +13,6 @@ new StaticAppS3PipelineStack(app, "StaticAppS3PipelineStack", {
   // env: { account: process.env.CDK_DEFAULT_ACCOUNT, region: process.env.CDK_DEFAULT_REGION },
   /* Uncomment the next line if you know exactly what Account and Region you
    * want to deploy the stack to. */
-  // env: { account: '123456789012', region: 'us-east-1' },
+  env: { account: import.meta.env.VITE_ACCOUNT_ID, region: "eu-west-2" },
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
