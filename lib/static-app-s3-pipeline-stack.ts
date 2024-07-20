@@ -10,6 +10,8 @@ export class StaticAppS3PipelineStack extends cdk.Stack {
     new StaticSite(this, "StaticSite", {
       siteSubDomain: "static",
       domainName: import.meta.env.VITE_DOMAIN_NAME,
+
+      skipDns: true, // skip to use an external DNS (or use s3 url directly)
     });
   }
 }
