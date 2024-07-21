@@ -6,7 +6,7 @@ import tseslint from "typescript-eslint";
 const compat = new FlatCompat();
 
 export default tseslint.config(
-  { ignores: ["eslint.config.js"] },
+  { ignores: ["eslint.config.js", "cdk.out/**/*"] },
   {
     languageOptions: {
       parserOptions: {

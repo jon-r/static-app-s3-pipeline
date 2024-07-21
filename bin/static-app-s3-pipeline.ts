@@ -1,4 +1,5 @@
 import * as cdk from "aws-cdk-lib";
+import { Aws } from "aws-cdk-lib";
 import "source-map-support/register";
 
 import { StaticAppS3PipelineStack } from "../lib/static-app-s3-pipeline-stack.ts";
@@ -13,6 +14,6 @@ new StaticAppS3PipelineStack(app, "StaticAppS3PipelineStack", {
   // env: { account: process.env.CDK_DEFAULT_ACCOUNT, region: process.env.CDK_DEFAULT_REGION },
   /* Uncomment the next line if you know exactly what Account and Region you
    * want to deploy the stack to. */
-  env: { account: import.meta.env.VITE_ACCOUNT_ID, region: "us-east-1" },
+  env: { account: Aws.ACCOUNT_ID, region: "eu-west-1" },
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
